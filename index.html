@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Guitar Freak</title>
+<meta name="theme-color" content="#16130f">
+<meta name="description" content="毎日5分ギターに触り、1曲を最後まで弾けるようにする練習・記録アプリ">
+<link rel="manifest" href="manifest.webmanifest">
+<link rel="icon" href="icon-192.png">
+<link rel="apple-touch-icon" href="icon-192.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#/"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14.5 3.5l6 6-2 1-1.5-1.5-4.6 4.6a4 4 0 1 1-2-2l4.6-4.6L13.5 5.5z" fill="currentColor"/></svg><span>Guitar Freak</span></a>
+  <nav class="tabs" aria-label="画面">
+    <a href="#/" data-tab="home">ホーム</a>
+    <a href="#/songs" data-tab="songs">曲</a>
+    <a href="#/lib" data-tab="lib">教材</a>
+    <a href="#/stats" data-tab="stats">分析</a>
+    <a href="#/settings" data-tab="settings">設定</a>
+  </nav>
+  <button class="sync" id="syncChip" type="button" aria-label="同期の状態"></button>
+</header>
+<main id="app" tabindex="-1"></main>
+<a class="runpill" id="runPill" href="#/run" hidden></a>
+<button class="metfab" id="metFab" type="button" aria-label="メトロノーム">♩</button>
+<div class="sheet-wrap" id="sheet" hidden><div class="sheet-bg" data-close></div><div class="sheet" role="dialog" aria-modal="true"></div></div>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<nav class="bottom" aria-label="画面">
+  <a href="#/" data-tab="home"><span class="ic">⌂</span>ホーム</a>
+  <a href="#/songs" data-tab="songs"><span class="ic">♫</span>曲</a>
+  <a href="#/lib" data-tab="lib"><span class="ic">▦</span>教材</a>
+  <a href="#/stats" data-tab="stats"><span class="ic">▮</span>分析</a>
+  <a href="#/settings" data-tab="settings"><span class="ic">⚙</span>設定</a>
+</nav>
+<script src="js/curriculum.js"></script>
+<script src="js/diagrams.js"></script>
+<script src="js/audio.js"></script>
+<script src="js/store.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

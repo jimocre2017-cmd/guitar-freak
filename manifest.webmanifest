@@ -1,0 +1,16 @@
+{
+  "name": "Guitar Freak",
+  "short_name": "Guitar Freak",
+  "description": "毎日5分ギターに触り、1曲を最後まで弾けるようにする練習・記録アプリ（オフライン対応）",
+  "lang": "ja",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#16130f",
+  "theme_color": "#16130f",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}
